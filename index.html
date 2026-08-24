@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Software Engineer</title>
+  <meta name="description" content="Full-Stack Developer building clean, scalable web apps." />
+  <meta property="og:title" content="Your Name — Software Engineer" />
+  <meta property="og:description" content="Full-Stack Developer building clean, scalable web apps." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#hero" class="nav__logo" aria-label="Home">SB<span class="accent">.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="#about"    class="nav__link">About</a></li>
+        <li><a href="#skills"   class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#blog"     class="nav__link">Blog</a></li>
+        <li><a href="#contact"  class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i data-lucide="sun"  class="icon-sun"></i>
+          <i data-lucide="moon" class="icon-moon"></i>
+        </button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul role="list">
+        <li><a href="#about"    class="nav__link" data-close-menu>About</a></li>
+        <li><a href="#skills"   class="nav__link" data-close-menu>Skills</a></li>
+        <li><a href="#projects" class="nav__link" data-close-menu>Projects</a></li>
+        <li><a href="#blog"     class="nav__link" data-close-menu>Blog</a></li>
+        <li><a href="#contact"  class="nav__link" data-close-menu>Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__inner container">
+        <p class="hero__eyebrow reveal">👋 Hello, I'm</p>
+        <h1 class="hero__name reveal">Sudhanshu Govindrao Bhosale<span class="accent">.</span></h1>
+        <p class="hero__tagline reveal">Full-Stack Developer building <em>clean, scalable</em> web apps<br>that users actually love.</p>
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact"  class="btn btn--ghost">Get In Touch</a>
+        </div>
+        <a href="#about" class="hero__scroll" aria-label="Scroll down">
+          <i data-lucide="chevrons-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">01 / About</span>
+          <h2 class="section__title">Who I Am</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__photo reveal">
+            <img
+              src="profile.jpg"
+              alt="Profile photo"
+              class="profile-photo"
+              loading="lazy"
+            />
+          </div>
+          <div class="about__content reveal">
+          <span class="section__label">01 / About</span>
+            <p class="about__bio">Hi! I'm <strong>Sudhanshu Govindrao Bhosale</strong>, a software engineer crafting full-stack web applications. I'm passionate about writing clean, maintainable code and building products that solve real problems.</p>
+            <p class="about__bio">When I'm not coding, you'll find me hiking mountain trails, experimenting with mechanical keyboards, or obsessing over the perfect cup of pour-over coffee. I believe great software is as much about empathy for users as it is about technical excellence.</p>
+            <ul class="about__facts" role="list">
+              <li><i data-lucide="map-pin"></i><span>Kharadi, Pune</span></li>
+              <li><i data-lucide="briefcase"></i><span>Open to new opportunities</span></li>
+              <li><i data-lucide="graduation-cap"></i><span>Pollytechnic in computer engineering — JSPM'S BSP</span></li>
+            </ul>
+            <a href="resume.pdf" class="btn btn--primary" download>
+              <i data-lucide="download"></i> Download Résumé
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">02 / Skills</span>
+          <h2 class="section__title">My Tech Stack</h2>
+        </div>
+        <div class="skills__grid">
+          <div class="skills__category reveal">
+            <h3 class="skills__cat-title"><i data-lucide="code-2"></i> Languages</h3>
+            <div class="skills__tags">
+              <span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">Python</span><span class="tag">Go</span><span class="tag">SQL</span><span class="tag">HTML &amp; CSS</span>
+            </div>
+          </div>
+          <div class="skills__category reveal">
+            <h3 class="skills__cat-title"><i data-lucide="layers"></i> Frameworks &amp; Libraries</h3>
+            <div class="skills__tags">
+              <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">FastAPI</span><span class="tag">Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="skills__category reveal">
+            <h3 class="skills__cat-title"><i data-lucide="database"></i> Databases</h3>
+            <div class="skills__tags">
+              <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">Supabase</span><span class="tag">Prisma</span>
+            </div>
+          </div>
+          <div class="skills__category reveal">
+            <h3 class="skills__cat-title"><i data-lucide="wrench"></i> Tools &amp; Platforms</h3>
+            <div class="skills__tags">
+              <span class="tag">Git &amp; GitHub</span><span class="tag">Docker</span><span class="tag">AWS</span><span class="tag">Vercel</span><span class="tag">Figma</span><span class="tag">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">03 / Projects</span>
+          <h2 class="section__title">Things I've Built</h2>
+        </div>
+        <div class="projects__grid">
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__number">01</span>
+              <div class="project-card__links">
+                <a href="#" class="icon-link" aria-label="Live demo" target="_blank" rel="noopener"><i data-lucide="external-link"></i></a>
+                <a href="#" class="icon-link" aria-label="GitHub repo" target="_blank" rel="noopener"><i data-lucide="github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-card__title">SaaS Analytics Dashboard</h3>
+            <p class="project-card__desc">A real-time analytics platform for SaaS businesses featuring custom charting, role-based access control, and webhook integrations.</p>
+            <div class="project-card__stack">
+              <span class="tag tag--sm">Next.js</span><span class="tag tag--sm">TypeScript</span><span class="tag tag--sm">PostgreSQL</span><span class="tag tag--sm">Redis</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__number">02</span>
+              <div class="project-card__links">
+                <a href="#" class="icon-link" aria-label="Live demo" target="_blank" rel="noopener"><i data-lucide="external-link"></i></a>
+                <a href="#" class="icon-link" aria-label="GitHub repo" target="_blank" rel="noopener"><i data-lucide="github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-card__title">E-Commerce Platform</h3>
+            <p class="project-card__desc">A full-featured online store with product management, Stripe payments, order tracking, and an admin panel built from scratch.</p>
+            <div class="project-card__stack">
+              <span class="tag tag--sm">React</span><span class="tag tag--sm">Node.js</span><span class="tag tag--sm">MongoDB</span><span class="tag tag--sm">Stripe</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__number">03</span>
+              <div class="project-card__links">
+                <a href="#" class="icon-link" aria-label="Live demo" target="_blank" rel="noopener"><i data-lucide="external-link"></i></a>
+                <a href="#" class="icon-link" aria-label="GitHub repo" target="_blank" rel="noopener"><i data-lucide="github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-card__title">CLI Dev Productivity Tool</h3>
+            <p class="project-card__desc">A command-line toolkit that automates repetitive dev workflows — project scaffolding, git hooks setup, and environment bootstrapping in one command.</p>
+            <div class="project-card__stack">
+              <span class="tag tag--sm">Go</span><span class="tag tag--sm">Cobra CLI</span><span class="tag tag--sm">Shell</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__number">04</span>
+              <div class="project-card__links">
+                <a href="#" class="icon-link" aria-label="Live demo" target="_blank" rel="noopener"><i data-lucide="external-link"></i></a>
+                <a href="#" class="icon-link" aria-label="GitHub repo" target="_blank" rel="noopener"><i data-lucide="github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-card__title">AI Writing Assistant</h3>
+            <p class="project-card__desc">A browser extension that enhances writing with AI-powered suggestions, grammar fixes, and tone adjustments using the OpenAI API.</p>
+            <div class="project-card__stack">
+              <span class="tag tag--sm">Python</span><span class="tag tag--sm">FastAPI</span><span class="tag tag--sm">OpenAI API</span><span class="tag tag--sm">JavaScript</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__number">05</span>
+              <div class="project-card__links">
+                <a href="#" class="icon-link" aria-label="Live demo" target="_blank" rel="noopener"><i data-lucide="external-link"></i></a>
+                <a href="#" class="icon-link" aria-label="GitHub repo" target="_blank" rel="noopener"><i data-lucide="github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Open-Source UI Component Library</h3>
+            <p class="project-card__desc">A themeable, accessible React component library with 40+ components, full TypeScript support, and Storybook documentation.</p>
+            <div class="project-card__stack">
+              <span class="tag tag--sm">React</span><span class="tag tag--sm">TypeScript</span><span class="tag tag--sm">Storybook</span><span class="tag tag--sm">Radix UI</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__number">06</span>
+              <div class="project-card__links">
+                <a href="#" class="icon-link" aria-label="Live demo" target="_blank" rel="noopener"><i data-lucide="external-link"></i></a>
+                <a href="#" class="icon-link" aria-label="GitHub repo" target="_blank" rel="noopener"><i data-lucide="github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-card__title">DevOps Monitoring Dashboard</h3>
+            <p class="project-card__desc">A self-hosted deployment and infrastructure monitoring tool with real-time alerts, log streaming, and Docker container management.</p>
+            <div class="project-card__stack">
+              <span class="tag tag--sm">Vue.js</span><span class="tag tag--sm">Go</span><span class="tag tag--sm">Docker</span><span class="tag tag--sm">Prometheus</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="section blog" id="blog">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">04 / Blog</span>
+          <h2 class="section__title">Recent Writing</h2>
+        </div>
+        <div class="blog__grid">
+
+          <article class="blog-card reveal">
+            <div class="blog-card__meta">
+              <time datetime="2025-07-15">July 15, 2025</time>
+              <span class="blog-card__tag">Architecture</span>
+            </div>
+            <h3 class="blog-card__title"><a href="#" target="_blank" rel="noopener">Why I Switched from REST to tRPC for My Next.js Projects</a></h3>
+            <p class="blog-card__excerpt">After years of writing REST APIs with hand-rolled types, switching to tRPC felt like removing a blindfold. Here's how it transformed my developer experience and the pitfalls to watch out for.</p>
+            <a href="#" class="blog-card__cta" target="_blank" rel="noopener">Read more <i data-lucide="arrow-right"></i></a>
+          </article>
+
+          <article class="blog-card reveal">
+            <div class="blog-card__meta">
+              <time datetime="2025-06-02">June 2, 2025</time>
+              <span class="blog-card__tag">Performance</span>
+            </div>
+            <h3 class="blog-card__title"><a href="#" target="_blank" rel="noopener">Achieving a 90+ Lighthouse Score: A Practical Checklist</a></h3>
+            <p class="blog-card__excerpt">Performance isn't an afterthought — it's a feature. I'll walk you through the exact changes that took a client's site from a 54 to a 97 Lighthouse score in one afternoon.</p>
+            <a href="#" class="blog-card__cta" target="_blank" rel="noopener">Read more <i data-lucide="arrow-right"></i></a>
+          </article>
+
+          <article class="blog-card reveal">
+            <div class="blog-card__meta">
+              <time datetime="2025-04-20">April 20, 2025</time>
+              <span class="blog-card__tag">Career</span>
+            </div>
+            <h3 class="blog-card__title"><a href="#" target="_blank" rel="noopener">5 Code Review Habits That Will Make Your Team Love You</a></h3>
+            <p class="blog-card__excerpt">Code review is one of the highest-leverage activities in a software team. These are the five habits I've built over five years that make reviews faster, kinder, and more effective.</p>
+            <a href="#" class="blog-card__cta" target="_blank" rel="noopener">Read more <i data-lucide="arrow-right"></i></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">06 / Contact</span>
+          <h2 class="section__title">Let's Work Together</h2>
+          <p class="section__subtitle reveal">Have a project in mind, a role to fill, or just want to say hello? Drop me a message and I'll get back to you within 24 hours.</p>
+        </div>
+        <div class="contact__grid">
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name" />
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="sudhanshubhosale3428@gmail.com" required autocomplete="email" />
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or just say hi..." required></textarea>
+              <span class="form-error"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span class="btn__text">Send Message</span>
+              <i data-lucide="send"></i>
+            </button>
+            <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+          </form>
+
+          <aside class="contact__social reveal">
+            <h3>Find Me Online</h3>
+            <ul class="social-list" role="list">
+              <li><a href="https://github.com/yourusername" class="social-link" target="_blank" rel="noopener"><i data-lucide="github"></i><span>GitHub</span></a></li>
+              <li><a href="https://linkedin.com/in/yourusername" class="social-link" target="_blank" rel="noopener"><i data-lucide="linkedin"></i><span>LinkedIn</span></a></li>
+              <li><a href="https://twitter.com/yourusername" class="social-link" target="_blank" rel="noopener"><i data-lucide="twitter"></i><span>Twitter / X</span></a></li>
+              <li><a href="mailto:sudhanshubhosale3428@gmail.com" class="social-link"><i data-lucide="mail"></i><span>sudhanshubhosale3428@gmail.com</span></a></li>
+            </ul>
+            <div class="availability-badge">
+              <span class="availability-badge__dot"></span>
+              Available for freelance &amp; full-time roles
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; <span id="footerYear"></span> Your Name. Crafted with ❤️ and too much coffee.</p>
+      <nav class="footer__links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer__back"><a href="#hero">Back to top <i data-lucide="arrow-up"></i></a></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
